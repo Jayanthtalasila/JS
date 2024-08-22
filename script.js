@@ -51,3 +51,17 @@ mutton.forEach((goat,i) => {
     }
 })
 // Set text content, id and class to each paragraph
+
+// DOM manipulation. day 22
+
+let title = document.createElement('h3')
+
+title.className = 'h3title'
+
+title.style.fontSize = '30px'
+
+title.textContent = 'creating html element using javascript.'
+// using the document.body.appendChild(title) shows the newly created element in the WEBPAGE 
+
+document.body.appendChild(title)
+console.log(title)
