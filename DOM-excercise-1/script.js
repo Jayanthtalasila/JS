@@ -13,7 +13,7 @@ document.getElementById('btn').addEventListener('click', function() {
         let div = document.createElement('div');
         div.textContent = i;
         div.className = 'number-box';
-        container.appendChild(div);
+
 
         if (isPrime(i)) {
             div.style.backgroundColor = 'red'
