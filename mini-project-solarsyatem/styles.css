@@ -2,6 +2,7 @@ body {
     background-image: url('./background.jpg');
     background-size: cover; 
     color: beige;
+
 }
 
 h1 {
@@ -28,9 +29,8 @@ input, select, button {
     width: max-content;
     display: inline-block;
     margin: 40px;
-    align-items: flex-start;
+    align-items: flex-end;
     background-color: antiquewhite;
-    background-color: opacity(.5);
 }
 p {
     display: flex;
@@ -39,10 +39,12 @@ p {
     padding: 10px;
     color: black;
     font-size: large;
+    float: right;
 }
 
 #image{
     display: inline-block;
     align-items: end;
     padding: 10px;
+    float: left;
 }

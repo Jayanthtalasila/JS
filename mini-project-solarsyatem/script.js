@@ -1,18 +1,18 @@
 function changeimage(){
-    let img = document.getElementById('img')
+    let img = document.getElementById('image')
     let selected = document.getElementById('planets').value
     var imgurl = "";
-    if (selected.value == mercury) {
+    if (selected === mercury) {
         imgurl = "./images/mercury.png";
-    } else if (selected.value == venus) {
+    } else if (selected === venus) {
         imgurl = "https://science.nasa.gov/image-detail/amf-pia00271/";
     } else {
         imgurl =""
     }
     img.src=imgurl;
 }
-document.getElementById('planets').addEventListener('change', changeimage);
-document.getElementById('btn').addEventListener('click', changeimage);
+
+
 
 
 
@@ -39,6 +39,7 @@ document.getElementById('btn').addEventListener('click', function () {
 
         let result = mass * gravity[drop]
         text.textContent = `the weight of object on ${drop} is ${result.toFixed(2)} N` 
+
     } else  {
         text.textContent = 'please enter valid number'
     }
